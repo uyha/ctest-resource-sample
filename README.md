@@ -1,6 +1,7 @@
 # Parsing CTest resource
 
-This repo demonstrate a way to use CTest resource feature and also provides a C++ header
+This repo demonstrate a way to use CTest resource feature (more about it
+[here](https://cmake.org/cmake/help/latest/manual/ctest.1.html#resource-specification-file)) and also provides a C++ header
 for parsing the environment variables passed by CTest.
 
 ## Parsing library
