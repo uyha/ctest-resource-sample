@@ -3,13 +3,16 @@
 #include <iostream>
 
 int main() {
-  auto const groups = river::get_resource_groups().value();
+  auto types = ctest::types_of(1).value();
+  for (auto const &type : types) {
+    std::cout << type << '\n';
+  }
+  {
+    auto const resources = ctest::resources_of(0, "resource").value();
+    auto index           = 0;
 
-  for (auto const &group : groups) {
-    for (auto const &[type, resources] : group) {
-      for (auto const &[id, slots] : resources) {
-        std::cout << "id: " << id << ", slots: " << slots << '\n';
-      }
+    for (auto const &[id, slots] : resources) {
+      std::cout << "id: " << id << ", slots: " << slots << '\n';
     }
   }
 }

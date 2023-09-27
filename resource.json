@@ -1,4 +1,5 @@
 {
+  "$schema": "/home/uy/cmake-schemas/test-resource.schema.json",
   "version": {
     "major": 1,
     "minor": 0

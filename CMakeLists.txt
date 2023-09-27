@@ -13,5 +13,5 @@ add_test(
 set_property(
   TEST main
   PROPERTY
-    RESOURCE_GROUPS "resource:1,resource:2,resource:20"
+    RESOURCE_GROUPS "2,resource:1;resource:2,resource:20"
 )
