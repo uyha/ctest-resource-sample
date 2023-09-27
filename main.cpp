@@ -1,4 +1,4 @@
-#include "cmake-resource-parsing.hpp"
+#include "resource-parsing.hpp"
 
 #include <iostream>
 
